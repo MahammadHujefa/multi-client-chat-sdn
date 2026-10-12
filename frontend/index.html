@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Client Chat Network</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <header class="header">
+        <h1>Multi-Client Chat Network</h1>
+        <p>SDN Controlled Chat Application</p>
+    </header>
+
+    <!-- JOIN -->
+    <section id="login-section" class="join-screen">
+        <h2>Join Chat</h2>
+
+        <input
+            id="username"
+            type="text"
+            placeholder="Enter Username"
+            maxlength="30"
+            autocomplete="off"
+        >
+
+        <button id="join-btn" class="primary-btn">
+            JOIN
+        </button>
+
+        <div id="login-status" class="status"></div>
+    </section>
+
+    <!-- CHAT -->
+    <section id="chat-section" class="chat-screen hidden">
+
+        <aside class="sidebar">
+
+            <button class="menu-btn" id="users-btn">
+                👥 <span>Online Users</span>
+            </button>
+
+            <button class="menu-btn" id="rooms-btn">
+                🏠 <span>Chat Rooms</span>
+            </button>
+
+            <button class="menu-btn" id="room-chat-btn">
+                💬 <span>Room Chat</span>
+            </button>
+
+            <button class="menu-btn" id="private-btn">
+                🔒 <span>Private Message</span>
+            </button>
+
+            <button class="menu-btn" id="help-btn">
+                ❓ <span>Help</span>
+            </button>
+
+            <div class="sidebar-user">
+                <span>Logged in as</span>
+                <strong id="current-user"></strong>
+            </div>
+
+        </aside>
+
+        <main class="chat-area">
+
+            <div class="chat-header">
+                <div>
+                    <h2 id="chat-title">General</h2>
+                    <span id="chat-subtitle">Room Chat</span>
+                </div>
+                <span id="connection-state" class="online">
+                    ● Online
+                </span>
+            </div>
+
+            <div id="messages" class="messages"></div>
+
+            <div class="composer">
+                <input
+                    id="message-input"
+                    type="text"
+                    placeholder="Type a message..."
+                    autocomplete="off"
+                >
+                <button id="send-btn">SEND</button>
+            </div>
+
+        </main>
+
+    </section>
+
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal hidden">
+    <div class="modal-card">
+        <button id="modal-close" class="modal-close">×</button>
+        <h2 id="modal-title"></h2>
+        <div id="modal-content"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
