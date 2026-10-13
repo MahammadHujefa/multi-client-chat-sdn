@@ -1,33 +1,33 @@
-# Python cache
+#Python cache
 __pycache__/
 *.py[cod]
 *.pyo
 
-# Virtual environments
+#Virtual environments
 venv/
 .venv/
 web-venv/
 ryu-venv/
 
-# Backup files
+#Backup files
 *.backup
 *.bak
 *~
 
-# Logs
+#Logs
 *.log
 
-# Temporary files
+#Temporary files
 .DS_Store
 Thumbs.db
 
-# Generated test results
-# Keep the final results if required for the project report
+#Generated test results
+#Keep the final results if required for the project report
 
-# Local user data
+#Local user data
 web/users.json
 
-# Compiled binaries and backup files
+#Compiled binaries and backup files
 client/client
 server/server
 *_backup.py
