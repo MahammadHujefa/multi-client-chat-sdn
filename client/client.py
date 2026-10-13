@@ -4,7 +4,7 @@ import threading
 SERVER_IP = "10.0.0.3"
 PORT = 5000
 BUFFER_SIZE = 1024
-
+#--------------------
 
 def receive_messages(client_socket):
     while True:
