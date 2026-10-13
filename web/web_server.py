@@ -2,10 +2,10 @@ import asyncio
 import json
 import websockets
 
-# ============================================================
+
 # WEB <-> TCP CHAT BRIDGE
 # Username only - no password
-# ============================================================
+
 
 TCP_HOST = "10.0.0.4"
 TCP_PORT = 5000
