@@ -36,18 +36,15 @@ const modalContent = document.getElementById("modal-content");
 const modalClose = document.getElementById("modal-close");
 
 
-// ============================================================
 // STATUS
-// ============================================================
 
 function setStatus(text) {
     loginStatus.textContent = text;
 }
 
 
-// ============================================================
 // ADD MESSAGE TO CHAT
-// ============================================================
+
 
 function addMessage(text, type = "normal") {
 
